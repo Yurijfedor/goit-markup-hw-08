@@ -1,0 +1,9 @@
+.logo--footer {
+  color: $primary-white-color;
+
+  &:hover,
+  &:focus {
+    cursor: default;
+    color: $primary-white-color;
+  }
+}

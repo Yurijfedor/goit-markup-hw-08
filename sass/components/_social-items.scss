@@ -1,0 +1,36 @@
+.social-items {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.social-items__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: $primary-white-color;
+
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social-items__icon {
+  fill: $social-icon-color;
+
+  transition: fill 250ms $timing-function;
+
+  .social-items__link:hover &,
+  .social-items__link:focus & {
+    fill: $primary-white-color;
+  }
+}
+
+.social-items__item + .social-items__item {
+  margin-left: 10px;
+}
