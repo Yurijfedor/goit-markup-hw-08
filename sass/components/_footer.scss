@@ -5,12 +5,15 @@
 }
 
 .container--wrapper {
-  // display: block;
-  // align-items: baseline;
   text-align: center;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    align-items: baseline;
   }
 }

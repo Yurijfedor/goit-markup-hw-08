@@ -33,7 +33,7 @@
   background-color: $background-work-title-color;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .section--work {
     display: none;
   }

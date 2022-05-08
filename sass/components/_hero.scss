@@ -27,7 +27,7 @@
     text-transform: uppercase;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     &__title {
       width: 360px;
       font-size: 26px;

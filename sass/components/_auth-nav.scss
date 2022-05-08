@@ -8,13 +8,15 @@
   // align-items: center;
   // margin-left: auto;
 
-  // &__item + &__item {
-  //   margin-left: 50px;
-  // }
-
   @media screen and (min-width: 768px) {
     flex-direction: column;
     justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
   }
 
   &__icon {
@@ -38,8 +40,14 @@
   }
 
   &__item:not(:last-child) {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
       margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__item + &__item {
+      margin-left: 50px;
     }
   }
 }
@@ -61,6 +69,11 @@
   @media screen and (min-width: 768px) {
     font-size: 12px;
     display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
   }
 
   &:hover,
