@@ -1,5 +1,12 @@
-.footer-list {
-  margin-bottom: 60px;
+@media screen and (min-width: 768px) {
+  .wrapper-address {
+    margin: 0 82.5px 0 67.5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-list {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-list__item {

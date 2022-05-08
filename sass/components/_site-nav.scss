@@ -1,21 +1,25 @@
 .site-nav {
-  margin-bottom: 302px;
-  // display: flex;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 302px;
+  }
   // margin-left: 93px;
 
-  // &__item + &__item {
-  //   margin-left: 50px;
-  // }
-
-  &__item:not(:last-child) {
-    margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    &__item + &__item {
+      margin-left: 50px;
+    }
   }
-
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (max-width: 767px) {
+    &__item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
   &__link {
-    // display: block;
-    // padding-top: 24px;
-    // padding-bottom: 25px;
-    // padding: 32px 0;
     color: $title-text-color;
     font-weight: 500;
     font-size: 40px;
@@ -23,6 +27,13 @@
     letter-spacing: 0.02em;
 
     transition: color 250ms $timing-function;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      padding: 32px 0;
+      font-size: 14px;
+      line-height: 1.14;
+    }
   }
   &__link:hover,
   &__link:focus {
@@ -32,15 +43,18 @@
   &__link--current {
     position: relative;
     color: $accent-color;
+
+    @media screen and (min-width: 768px) {
+      &::after {
+        position: absolute;
+        bottom: -1px;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $accent-color;
+      }
+    }
   }
 }
-// &--current::after {
-//   position: absolute;
-//   bottom: -1px;
-//   display: block;
-//   content: "";
-//   width: 100%;
-//   height: 4px;
-//   border-radius: 2px;
-//   background-color: $accent-color;
-// }

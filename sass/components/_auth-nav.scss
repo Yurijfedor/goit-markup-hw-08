@@ -1,7 +1,10 @@
 .contacts {
   display: flex;
   flex-direction: column-reverse;
-  margin-bottom: 64px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 64px;
+  }
   // align-items: center;
   // margin-left: auto;
 
@@ -9,21 +12,38 @@
   //   margin-left: 50px;
   // }
 
-  &__icon {
-    display: none;
-    // margin-right: 10px;
-    // fill: currentColor;
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    // transition: fill 250ms $timing-function;
+  &__icon {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    // margin-right: 10px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 8px;
+      fill: currentColor;
+
+      transition: fill 250ms $timing-function;
+    }
   }
 
   &__item:not(:first-child) {
-    margin-bottom: 32px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
   }
 }
-
 .contacts__link {
-  // display: flex;
   // padding: 32px 0;
 
   color: $primary-text-color;
@@ -33,11 +53,21 @@
   letter-spacing: 0.02em;
 
   transition: color 250ms $timing-function;
-  transition: font-size 250ms $timing-function;
+
+  @media screen and (max-width: 767px) {
+    transition: font-size 250ms $timing-function;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    display: flex;
+  }
 
   &:hover,
   &:focus {
-    font-size: 34px;
+    @media screen and (max-width: 767px) {
+      font-size: 34px;
+    }
     color: $accent-color;
   }
 

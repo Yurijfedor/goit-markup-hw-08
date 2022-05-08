@@ -1,6 +1,10 @@
 .subscription {
   margin-left: auto;
 
+  @media screen and (min-width: 768px) {
+    margin: 60px auto 0 auto;
+  }
+
   &__text {
     font-weight: 700;
     line-height: 1.14;
@@ -14,6 +18,10 @@
 .subscription-form {
   display: block;
   margin-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
 
   &__field {
     position: relative;

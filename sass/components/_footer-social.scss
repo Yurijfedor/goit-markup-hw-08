@@ -1,6 +1,12 @@
 .footer-social {
   // margin-left: 70px;
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0 82.5px 0 67.5px;
+  }
 
   &__text {
     font-family: Roboto;
