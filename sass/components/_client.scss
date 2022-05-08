@@ -1,15 +1,18 @@
 .client-list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 
-  &__item + &__item {
-    margin-left: 30px;
+  &__item {
+    width: calc((100% - 2 * #{$card-set-gap}) / 2);
+    margin: 15px;
   }
 }
 .client-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  // width: 170px;
   height: 92px;
   border: 1px solid $social-icon-color;
   border-radius: 4px;

@@ -1,0 +1,16 @@
+.social-list {
+  display: flex;
+
+  &__item + &__item {
+    margin-left: 20px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+  }
+}

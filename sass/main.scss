@@ -1,9 +1,15 @@
 @import "./utils/vars";
+@import "./components/body";
+@import "./components/section";
+@import "./components/container";
 @import "./utils/reset";
 @import "./components/page-header";
+@import "./components/nav";
+@import "./components/menu-button";
 @import "./components/logo";
 @import "./components/site-nav";
 @import "./components/auth-nav";
+@import "./components/social-list";
 @import "./components/hero";
 @import "./components/advantage";
 @import "./components/work-list";

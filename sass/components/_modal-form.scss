@@ -1,5 +1,5 @@
 .user-form {
-  width: 448px;
+  width: 370px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -105,13 +105,15 @@
 }
 
 .form-checkbox__link {
+  font-size: 12px;
+  font-weight: 1.17;
   color: $accent-color;
   margin-left: 4px;
 }
 
 .form-checkbox__icon {
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 7px;
   width: 16px;
   height: 15px;
   background-image: url(../imges/modal_svg/rectangle.svg);
@@ -119,6 +121,11 @@
   .form-checkbox__input:checked + & {
     background-image: url(../imges/modal_svg/vector.svg);
   }
+}
+
+.form-checkbox__text {
+  font-size: 12px;
+  font-weight: 1.17;
 }
 
 .button--modal {
