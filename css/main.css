@@ -459,6 +459,12 @@ a {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../imges/2x/new_photo@2x.jpg);
+  }
+}
+
 .hero__title {
   width: 696px;
   margin: 0 auto 30px auto;
@@ -651,10 +657,6 @@ a {
   .team-list {
     margin: -15px;
   }
-}
-
-.team-list__img {
-  width: 100%;
 }
 
 .team-list__item {
