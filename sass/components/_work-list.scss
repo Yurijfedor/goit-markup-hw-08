@@ -9,11 +9,13 @@
 
 .work-list__item {
   position: relative;
-
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
+
 .work-list__title {
   position: absolute;
   bottom: 0;

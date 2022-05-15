@@ -2,6 +2,10 @@
   width: 370px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 }
 
 .form-list__field {
@@ -109,6 +113,11 @@
   font-weight: 1.17;
   color: $accent-color;
   margin-left: 4px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    font-weight: 1.71;
+  }
 }
 
 .form-checkbox__icon {
@@ -126,6 +135,11 @@
 .form-checkbox__text {
   font-size: 12px;
   font-weight: 1.17;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    font-weight: 1.71;
+  }
 }
 
 .button--modal {
