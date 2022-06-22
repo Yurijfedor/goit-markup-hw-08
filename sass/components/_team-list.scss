@@ -3,8 +3,8 @@
 }
 
 .team-list {
-  // display: flex;
-  // flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
     margin: -15px;
